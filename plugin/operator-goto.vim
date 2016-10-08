@@ -1,11 +1,11 @@
 function! Op_goto_start(motion_wiseness)
   let start = getpos("'[")
-  cursor(start[0:2])
+  call cursor(start[0:2])
 endfunction
 
 function! Op_goto_end(motion_wiseness)
   let start = getpos("']")
-  cursor(start[0:2])
+  call cursor(start[0:2])
 endfunction
 
 call operator#user#define('gotostart', 'Op_goto_start')
