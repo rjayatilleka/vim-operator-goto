@@ -1,10 +1,10 @@
 function! Op_goto_start(motion_wiseness)
-  let start = getpos("'[")
+  let start = getpos("`[")
   call cursor(start[0:2])
 endfunction
 
 function! Op_goto_end(motion_wiseness)
-  let start = getpos("']")
+  let start = getpos("`]")
   call cursor(start[0:2])
 endfunction
 
