@@ -1,9 +1,9 @@
 function! Op_goto_start(motion_wiseness)
   let start = getpos("`[")
-  echomsg getpos("`[")
-  echomsg getpos("'[")
-  echomsg getpos("']")
-  echomsg getpos("`]")
+  echomsg string(getpos("`["))
+  echomsg string(getpos("'["))
+  echomsg string(getpos("']"))
+  echomsg string(getpos("`]"))
   call cursor(start[0:2])
 endfunction
 
