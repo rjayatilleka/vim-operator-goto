@@ -4,12 +4,12 @@ function! Op_goto_start(motion_wiseness)
   echomsg string(getpos("'["))
   echomsg string(getpos("']"))
   echomsg string(getpos("`]"))
-  call cursor(start[0:2])
+  call cursor(start[1:3])
 endfunction
 
 function! Op_goto_end(motion_wiseness)
   let end = getpos("`]")
-  call cursor(end[0:2])
+  call cursor(end[1:3])
 endfunction
 
 call operator#user#define('gotostart', 'Op_goto_start')
