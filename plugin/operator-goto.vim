@@ -1,14 +1,12 @@
 function! Op_goto_start(motion_wiseness)
-  let start = getpos("`[")
-  echomsg string(getpos("`["))
-  echomsg string(getpos("'["))
-  echomsg string(getpos("']"))
-  echomsg string(getpos("`]"))
+  let start = getpos("'[")
+  echomsg string(start)
   call cursor(start[1:3])
 endfunction
 
 function! Op_goto_end(motion_wiseness)
-  let end = getpos("`]")
+  let end = getpos("']")
+  echomsg string(end)
   call cursor(end[1:3])
 endfunction
 
