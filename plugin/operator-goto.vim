@@ -19,5 +19,5 @@ endfunction
 call operator#user#define('gotostart', 'Op_goto_start')
 call operator#user#define('gotoend', 'Op_goto_end')
 
-map <leader>[ <Plug>(operator-gotostart)
-map <leader>] <Plug>(operator-gotoend)
+map { <Plug>(operator-gotostart)
+map } <Plug>(operator-gotoend)
